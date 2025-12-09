@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Hostels - Student Residence Connect</title>
+<link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+ </head>
+<body>
+    <header class="header">
+    <nav class="nav container">
+        <a href="index.html" class="logo" style="display: block; width: 150px;">
+            <img src="img/logo.png" alt="Student Residence Connect Logo" style="width: 100%; height: auto;">
+        </a>
+        <div class="nav-menu" id="nav-menu">
+            <ul class="nav-list">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="hostels.html" class="nav-link">Hostels</a></li>
+                <li><a href="php/recommendations.php" class="nav-link">Recommendations</a></li>
+                <li><a href="about.html" class="nav-link">About Us</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                
+                    
+                    
+               
+            </ul>
+        </div>
+        <div class="nav-toggle" id="nav-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+</header>
+
+    <main>
+        <section class="hostels-hero">
+            <div class="container">
+                <h1 style="text-align: center;">All Hostels</h1>
+
+                <div class="search-container">
+                    <div class="search-bar">
+                        <input type="text" placeholder="Search for hostels..." id="search-input">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div class="filters">
+                        <select id="price-range">
+                            <option value="">Price Range</option>
+                            <option value="0-5000">₨0 - ₨5,000</option>
+                            <option value="5000-10000">₨5,000 - ₨10,000</option>
+                            <option value="10000+">₨10,000+</option>
+                        </select>
+                        <select id="amenities">
+                            <option value="">Amenities</option>
+                            <option value="wifi">WiFi</option>
+                            <option value="ac">AC</option>
+                            <option value="laundry">Laundry</option>
+                            <option value="meals">Meals</option>
+                        </select>
+                        <select id="location">
+                            <option value="">Location</option>
+                            <option value="near">Near University</option>
+                                                   </select>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="all-hostels">
+            <div class="container">
+                <div class="hostels-grid" id="all-hostels">
+                    <!-- Hostels will be loaded here via JavaScript -->
+                </div>
+                <div class="pagination" id="pagination" style="text-align:center; margin-top:20px;">
+    <!-- Pagination buttons will be inserted here by JavaScript -->
+</div>
+
+            </div>
+        </section>
+    </main>
+
+     <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <h3>Student Residence Connect</h3>
+                    <p>Finding your perfect student accommodation made easy.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="hostels.html">Hostels</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li>University of Sahiwal</li>
+                        <li>Sahiwal, Pakistan</li>
+                        <li>Email: mazeemtvid@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> Student Residence Connect. All rights reserved.</p>
+            </div>
+    </footer>
+    <script src="js/main.js"></script>
+<script src="./js/hostels.js"></script>
+</body>
+</html>

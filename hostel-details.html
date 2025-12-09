@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hostel Details - Student Residence Connect</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/hostel_details.css" />
+</head>
+<body>
+    <header class="header">
+        <nav class="nav container">
+            <a href="index.html" class="logo" style="display: block; width: 150px;">
+              <img
+              src="img/logo.png"
+              alt="Student Residence Connect Logo"
+              style="width: 100%; height: auto; margin-left: 1px;"
+            />
+            
+            </a>
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="hostels.html" class="nav-link">Hostels</a></li>
+                    <li>
+                      <a href="php/recommendations.php" class="nav-link"
+                        >Recommendations</a
+                      >
+                    </li>
+                    <li><a href="about.html" class="nav-link">About Us</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hostel-details" class="container">
+            <h1 id="hostel-title" class="hostel-title"></h1>
+            <div class="hostel-gallery" id="hostel-gallery"></div>
+            <div class="hostel-info">
+                <div class="hostel-main-info">
+                    <p class="hostel-location"><span id="hostel-address"></span></p>
+                </div>
+                <div class="hostel-description">
+                    <h2>Description</h2>
+                    <p id="hostel-description"></p>
+                </div>
+                <h2>Amenities</h2>
+                <div class="hostel-amenities" id="hostel-amenities"></div>
+                <div class="hostel-price-card">
+                    <div class="price">
+                        <span class="amount" id="hostel-rent"></span>
+                        <span class="period">PKR/month</span>
+                    </div>
+                    <a id="hostel-location-btn" href="#" target="_blank" class="primary-btn" 
+   style="background-color: lightgreen; color: black; padding: 10px 15px; text-decoration: none; border-radius: 5px; display: inline-block;">
+   Open Hostel Location<br><small>(Use mobile for better Experience)</small>
+</a>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="hostel-map">
+          <div class="container" style="max-width: 1240px; margin: 0 auto; padding: 0 15px;">
+
+            <h2 style="margin-bottom: 20px;">Location</h2>
+
+                <div class="map-container">
+                  <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3431.3101458141837!2d73.0875963738858!3d30.68154872681457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3918ff78fd4a99ad%3A0x4c69bb8ec62be12b!2sUniversity%20of%20Sahiwal!5e0!3m2!1sen!2s!4v1718345555555"
+                  width="100%"
+                  height="450"
+                  style="border:0;"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+                
+                </div>
+            </div>
+        </section>
+
+        <section
+          id="comment-section"
+          style="
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background: #f9f9f9;
+          "
+        >
+            <h2
+              style="
+                text-align: center;
+                color: #333;
+                margin-bottom: 15px;
+              "
+            >
+              Comments
+            </h2>
+
+            <form
+              id="comment-form"
+              style="display: flex; flex-direction: column; gap: 10px"
+            >
+                <input
+                  type="text"
+                  id="username"
+                  placeholder="Your Name"
+                  required
+                  style="
+                    padding: 8px;
+                    border: 1px solid #ccc;
+                    border-radius: 4px;
+                    width: 100%;
+                  "
+                />
+
+                <textarea
+                  id="comment"
+                  placeholder="Write your comment (Please use English Language)"
+                  required
+                  style="
+                    padding: 8px;
+                    border: 1px solid #ccc;
+                    border-radius: 4px;
+                    width: 100%;
+                    height: 80px;
+                  "
+                ></textarea>
+
+                <button
+                  type="submit"
+                  style="
+                    padding: 10px;
+                    background: #007bff;
+                    color: white;
+                    border: none;
+                    border-radius: 4px;
+                    cursor: pointer;
+                  "
+                >
+                  Submit Comment
+                </button>
+            </form>                 
+
+            
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <h3>Student Residence Connect</h3>
+                    <p>Finding your perfect student accommodation made easy.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="hostels.html">Hostels</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li>University of Sahiwal</li>
+                        <li>Sahiwal, Pakistan</li>
+                        <li>Email: mazeemtvid@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> Student Residence Connect. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+<script src="js/common.js"></script> 
+    <script src="js/main.js"></script>
+    <script src="js/hostel-details.js" defer></script>
+    
+</body>
+</html>

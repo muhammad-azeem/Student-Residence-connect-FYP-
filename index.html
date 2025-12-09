@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Residence Connect</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav container">
+            <a href="index.html" class="logo">
+                <img src="img/logo.png" alt="Student Residence Connect Logo">
+            </a>
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>                
+                    <li><a href="about.html" class="nav-link">About Us</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="admin/login.html" class="nav-link admin-link">
+                        <i class="fas fa-user-circle"></i>
+                        <span>Admin</span>
+                    </a></li>
+                    <div id="logout-section">
+                        <a href="php/logout.php" class="logout-link">Logout</a>
+                    </div>
+                </ul>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <h1>Find Your Perfect Student Accommodation</h1>
+                <h2>Discover comfortable and affordable hostels near University of Sahiwal</h2>                    
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features">
+            <div class="container">
+                <h2>Why Choose Us?</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <h3>Verified Hostels</h3>
+                        <p>All our listings are personally verified for quality and safety</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3>Best Locations</h3>
+                        <p>Find accommodations close to your campus</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h3>Affordable Prices</h3>
+                        <p>Options for every budget without compromising on quality</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cards Section -->
+        <section class="cards-section">
+            <div class="container">
+                <h2>Our Features</h2>
+                <div class="cards-container">
+                    <!-- Card 1 -->
+                    <div class="card">
+                        <img src="img/1.png" alt="Card 1">
+                        <div class="card-content">
+                            <h3>Hostel Details</h3>
+                            <p>View clear pictures and full info about each hostel.</p>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="card">
+                        <img src="img/2.png" alt="Card 2">
+                        <div class="card-content">
+                            <h3>Near University</h3>
+                            <p>Our team is here to assist you anytime you need help.</p>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="card">
+                        <img src="img/3.jpg" alt="Card 3">
+                        <div class="card-content">
+                            <h3>Verified Reviews</h3>
+                            <p>See genuine reviews from students who stayed here.</p>
+                        </div>
+                    </div>
+                    <!-- Card 4 -->
+                    <div class="card">
+                        <img src="img/4.jpg" alt="Card 4">
+                        <div class="card-content">
+                            <h3>Flexible Pricing</h3>
+                            <p>Choose a plan that fits your needs and budget.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Banner Section -->
+        <section class="banner"></section>
+
+        <!-- CTA Section (Ready to Find Your New Home?) -->
+        <section class="cta">
+            <div class="container">
+                <h2>Ready to Find Your New Home?</h2>
+                <p>Browse our selection of quality student accommodations today and find the perfect place for you!</p>
+                <a href="php/check-login.php" class="cta-button">View All Hostels</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <h3>Student Residence Connect</h3>
+                    <p>Finding your perfect student accommodation made easy.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li>University of Sahiwal</li>
+                        <li>Sahiwal, Pakistan</li>
+                        <li>Email: mazeemtvid@gmail.com</li>
+                    </ul>
+                </div>             
+            </div>            
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> Student Residence Connect. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>    
+    <script src="js/main.js"></script>
+    </body>
+</html>
